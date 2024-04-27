@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Register</title>
+  <style>
+    label {
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <label for="email">email</label>
+    <input type="email" name="email" required>
+    <label for="password">password</label>
+    <input type="password" name="password" required minlength="7" maxlength="15">
+    <label for="first_name">first name</label>
+    <input id="first_name" name="first_name" required pattern="[a-zA-Z]+" maxlength="20" minlength="2">
+    <label for="last_name">last name</label>
+    <input id="last_name" name="last_name" required pattern="[a-zA-Z]+" maxlength="20" minlength="2">
+    <label for="birthday">Birthday</label>
+    <input type="date" id="birthday" name="birthday" required>
+    <label for="telephone">telephone number</label>
+    <input type="tel" name="telephone" required>
+    <label for="plan">Choose a plan</label>
+    <select id="plan" name="plan">
+      <option value="free">free</option>
+      <optgroup label="month">
+        <option value="basic">basic 10$</option>
+        <option value="mid">mid 20$</option>
+        <option value="adv">adv 50$</option>
+      </optgroup>
+    </select>
+    <br>
+    <input type="checkbox" name="pro" id="pro" value="y">
+    <label for="pro">pro plan</label>
+    <label for="card">card number</label>
+    <input id="card" name="card" required pattern="[0-9]+" minlength="16" maxlength="16">
+    <label for="cvv">cvv</label>
+    <input id="cvv" name="cvv" required pattern="[0-9]+" minlength="3" maxlength="3">
+    <label for="expi">expiration date</label>
+    <input type="date" name="expi" required>
+    <label for="address">billing address</label>
+    <input name="address" id="address" required>
+    <br>
+    <button>Submit</button>
+  </form>
+</body>
+
+</html>
